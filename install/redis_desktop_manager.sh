@@ -3,6 +3,7 @@
 set -e
 
 echo "Install RedisDesktopManager"
+apt-get update && apt-get install -y git lsb-release sudo software-properties-common
 mkdir -p /soft/RedisDesktopManager
 wget -qO- https://codeload.github.com/uglide/RedisDesktopManager/tar.gz/0.8.8 | tar xz --strip 1 -C /soft/RedisDesktopManager
 cd /soft/RedisDesktopManager/src/
