@@ -6,9 +6,9 @@ MAINTAINER Tobias Schneck "tobias.schneck@consol.de"
 ENV REFRESHED_AT 2017-12-24
 
 ## Install a gedit
-USER 0
 ADD ./install/ $INST_SCRIPTS/
 ### Install RedisDesktopManager
+USER 0
 RUN $INST_SCRIPTS/redis_desktop_manager.sh
 ## switch back to default user
 USER 1984
